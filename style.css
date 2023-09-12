@@ -1,0 +1,32 @@
+:root {
+    --main-background-color: hsl(273, 75%, 66%);
+    --card-background-color: hsl(240, 5%, 91%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper {
+    background-color: var(--main-background-color);
+    padding: 24px;
+}
+
+.card {
+    background-color: var(--card-background-color);
+    border-radius: 12px;
+    height: 200px;
+    width: 200px;
+}
+
+.woman-online-mobile {
+    height: 300px;
+    width: 280px;
+}
+
+.ques {
+    gap: 18px;
+}
