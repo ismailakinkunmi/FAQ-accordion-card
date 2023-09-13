@@ -4,30 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
 </head>
-<body>
-  <div class="wrapper">
-    <div class="card">    
-      <!-- <div>
-        <img src="./images/illustration-woman-online-mobile.svg" alt="woman-online-mobile" 
-        class="woman-online-mobile">
+<body> 
+
+    <div id="card">         
+      
+        <h1 class="title">FAQ</h1>
+
+        <ul class="faq">
+          <li>
+            <label for="question1"> How many team members can I invite?
+               <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow">
+            </label>
+               
+              <input type="checkbox" name="faq" id="question1">        
+            <div class="answer">            
+            <p>  You can invite up to 2 additional users on the Free plan. 
+              There is no limit on team members for the Premium plan.
+            </p>
+            </div>
+          </li>
+          
+        </ul>       
+           
+
       </div>
 
-      <div class="faq-card">
-        <div class="ques">
-          <p class="question"> How many team members can I invite?</p>
-          <img src="./images/icon-arrow-down.svg" alt="arrow down">
-        </div>
 
-      </div> -->
-
-    </div>
-  </div>
   <!-- How many team members can I invite?
   You can invite up to 2 additional users on the Free plan. There is no limit on 
   team members for the Premium plan.
