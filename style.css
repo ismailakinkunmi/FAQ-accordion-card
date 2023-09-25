@@ -109,9 +109,7 @@ body {
     max-height: 200px;
 }
 
-
 @media (max-width: 375px) {
-
 
     #card {
         width: 100%;
@@ -135,14 +133,6 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 1440px) {
-    /* body {
-        height: 100%;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
-
     #card {
         width: 100%;
         min-width: calc(768px - 24px);
@@ -151,7 +141,6 @@ body {
         justify-content: space-between;
         overflow-x: hidden;
     }
-
 
     #card .mobile {
         display: none;
@@ -168,6 +157,4 @@ body {
         align-items: start;
         width: 50%;
     }
-
-
 }
