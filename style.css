@@ -1,0 +1,160 @@
+:root {
+    --primary-bg-gradient-violet: hsl(273, 75%, 66%);
+    --primary-bg-gradient-blue: hsl(240, 73%, 65%);
+    --primary-text-red: hsl(14, 88%, 65%);
+    --text-dark-desaturated-blue: hsl(238, 29%, 16%);
+
+    --divider-light-grayish-blue: hsl(240, 5%, 91%);
+
+    --text-color: hsl(240, 6%, 50%);
+    --primary-text-dark-grayish-blue: hsl(237, 12%, 33%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .2s ease-in-out;
+}
+
+body {
+    background: linear-gradient(var(--primary-bg-gradient-violet), var(--primary-bg-gradient-blue));
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    color: var(--text-color);
+    background-repeat: no-repeat;
+    padding: 0 14px;
+}
+
+#card {
+    margin: 150px auto 50px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#card .online {
+    height: 200px;
+    object-fit: contain;
+}
+
+#card .mobile {
+    width: 250px;
+    position: absolute;
+    top: -126px;
+    left: 0;
+    left: calc((100% - 250px) / 2);
+    object-fit: cover;
+}
+
+#card .desktop {
+    display: none;
+}
+
+#card .content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+#card .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--title-color);
+}
+
+#card .content {
+    margin-top: 100px;
+}
+
+#card .faq li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid var(--divider-light-grayish-blue);
+}
+
+#card .faq label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.faq li input[type='checkbox'] {
+    display: none;
+}
+
+.faq li .answer {
+    line-height: 22px;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.faq li .display-answer {
+    padding-top: 16px;
+    padding-right: 16px;
+    max-height: 200px;
+}
+
+@media (max-width: 375px) {
+
+    #card {
+        width: 100%;
+        min-width: 200px;
+        max-width: 375px;
+    }
+
+    #card .online {
+        height: 200px;
+    }
+
+    #card .mobile {
+        width: 200px;
+        position: absolute;
+        top: -126px;
+        left: 0;
+        left: calc((100% - 200px) / 2);
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    #card {
+        width: 100%;
+        min-width: calc(768px - 24px);
+        padding: 50px 24px 50px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow-x: hidden;
+    }
+
+    #card .mobile {
+        display: none;
+    }
+
+    #card .desktop {
+        display: block;
+        height: 250px;
+        margin-left: -30px;
+    }
+
+    #card .content {
+        margin-top: 0;
+        align-items: start;
+        width: 50%;
+    }
+}
