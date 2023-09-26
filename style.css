@@ -31,6 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 24px 0;
 }
 
 #card {
@@ -115,11 +116,15 @@ body {
 }
 
 @media (max-width: 375px) {
+    body {
+        padding: 120px 0 20px;
+    }
 
     #card {
         width: 100%;
         min-width: 200px;
         max-width: 375px;
+
     }
 
     #card .online {
